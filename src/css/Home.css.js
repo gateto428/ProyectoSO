@@ -99,3 +99,28 @@ export const ImgS = styled.img`
     height: 5vh;
     margin-right: 0.5em; 
 `;
+
+export const Button = styled.button`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 3em;
+    font-size: 2em;
+    padding: 0.4em; 
+    border-radius: 40px;
+    border-style: double;
+    background-color: #c73a75;
+    color: white;
+    &:hover {
+        color:#c73a75;
+        cursor: pointer;
+        background-color: white;
+    };
+`;
+
+export const ImgB = styled.img`
+    width: 5vw;
+    height: 8vh;
+    margin-left: 1em;
+`;

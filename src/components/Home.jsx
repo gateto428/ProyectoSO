@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import button from "../img/cpu.png";
 import {
   Container,
   Div,
@@ -12,6 +13,8 @@ import {
   TableC,
   Th,
   Td,
+  Button,
+  ImgB,
 } from "../css/Home.css.js";
 import clock from "../img/clock.png";
 import cpu from "../img/cpustatus.png";
@@ -51,6 +54,12 @@ const Home = (props) => {
             <Img src={clock} alt="Clock_Picture" />
             <label>Clock: {elemento.clock}</label>
           </DivClock>
+          <div>
+            <Button onClick={charheM}>
+              <span>Start Simulation</span>
+              <ImgB src={button} alt="img_button" />
+            </Button>
+          </div>
           <DivEvents>
             <label>Events: </label>
             <p>{elemento.events}</p>
@@ -101,7 +110,6 @@ const Home = (props) => {
           </div>
         </div>
       </Div>
-      <button onClick={charheM}>Start Simulation</button>
     </Container>
   );
 };
